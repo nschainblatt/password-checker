@@ -35,12 +35,11 @@ def main(password):
 
 
 if __name__ == '__main__':
-    with open('checker.txt', 'r') as password_file:
-        while True:
-            password_input = input('Enter the password you would like to check: ')
-            main(password_input)
-            print()
-            again = input('Would you like to check another password? Y/N: ')
-            print()
-            if again.upper() != 'Y':
-                break
+    while True:
+        password_input = input('Enter the password you would like to check: ')
+        main(password_input)
+        print()
+        again = input('Would you like to check another password? Y/N: ')
+        print()
+        if again.upper() != 'Y':
+            break
